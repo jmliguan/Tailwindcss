@@ -8,40 +8,42 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="">
-    <div class=" flex flex-col justify-center items-center max-w-full bg-[#FFFFFF]">
-        <nav class="flex items-center justify-between w-full px-6 py-4 bg-[#F5F7FA]">
-            <div class="flex items-center">
-                <img src="images/Logo (1).png" alt="this is a logo" class="w-full">
-            </div>
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex">
-                <ul class="flex items-center gap-[4vw]">
-                    <li><a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Home</a></li>
-                    <li><a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Service</a></li>
-                    <li><a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Feature</a></li>
-                    <li><a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Product</a></li>
-                    <li><a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Testimonial</a></li>
-                    <li><a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <!-- Login/Signup Buttons -->
-            <div class=" md:flex space-x-2">
-                <button class="w-[77px] h-10 rounded-md py-2.5 px-5 bg-[#F5F7FA] hover:bg-[#4CAF4F] text-[#4CAF4F] hover:text-white font-medium">Login</button>
-                <button class="w-[120px] h-10 rounded-md py-2.5 px-5 bg-[#4CAF4F] hover:bg-[#F5F7FA] text-white hover:text-[#4CAF4F] font-medium">Sign up</button>
-            </div>
-            <!-- Hamburger Menu for mobile -->
-            <div class="md:hidden flex items-center">
-                <button id="hamburger" class="focus:outline-none">
-                    <span class="block w-8 h-1 bg-black mb-1"></span>
-                    <span class="block w-8 h-1 bg-black mb-1"></span>
-                    <span class="block w-8 h-1 bg-black"></span>
-                </button>
-            </div>
-        </nav>
+<body class="flex flex-col justify-center items-center w-full sm-w bg-[#FFFFFF]">
+
+    <!-- NAV BAR -->
+    <nav class="flex items-center justify-between w-full px-6 py-4 bg-[#F5F7FA]">
+        <div class="flex items-center">
+            <img src="images/Logo (1).png" alt="this is a logo" class="">
+        </div>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex">
+            <ul class="flex items-center gap-[4vw]">
+                <li><a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Home</a></li>
+                <li><a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Service</a></li>
+                <li><a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Feature</a></li>
+                <li><a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Product</a></li>
+                <li><a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Testimonial</a></li>
+                <li><a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <!-- Login/Signup Buttons -->
+        <div class=" md:flex space-x-1 ">
+            <button class="w-[77px] h-10 rounded-md py-2.5 px-5 bg-[#F5F7FA] hover:bg-[#4CAF4F] text-[#4CAF4F] hover:text-white font-medium">Login</button>
+            <button class="w-[120px] h-10 rounded-md py-2.5 px-5 bg-[#4CAF4F] hover:bg-[#F5F7FA] text-white hover:text-[#4CAF4F] font-medium">Sign up</button>
+        </div>
+        <!-- Hamburger Menu for mobile -->
+        <div class="md:hidden flex items-center">
+            <button id="hamburger" class="focus:outline-none">
+                <span class="block w-8 h-1 bg-black mb-1"></span>
+                <span class="block w-8 h-1 bg-black mb-1"></span>
+                <span class="block w-8 h-1 bg-black"></span>
+            </button>
+        </div>
         
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4 px-4">
+        
+    </nav>
+         <!-- Mobile Menu -->
+         <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4 px-4">
             <a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Home</a>
             <a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Service</a>
             <a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Feature</a>
@@ -49,35 +51,7 @@
             <a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">Testimonial</a>
             <a class="font-inter font-medium text-base text-[#18191F] hover:text-gray-500" href="#">FAQ</a>
         </div>
-        
-        <!-- Main Content -->
-        <div class="w-full h-auto py-12 bg-[#F5F7FA]">
-            <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center">
-                <!-- Text Section -->
-                <div class="w-full md:w-1/2 mt-8 md:mt-0">
-                    <h1 class="font-inter font-semibold text-4xl md:text-6xl leading-tight text-[#4D4D4D]">
-                        Lessons and insights <br>
-                        <span class="text-[#4CAF4F]">from 8 years</span>
-                    </h1>
-                    <p class="mt-4 text-[#717171] text-base md:text-lg">
-                        Where to grow your business as a photographer: site or social media?
-                    </p>
-                    <button class="mt-6 w-full md:w-[128px] h-[52px] rounded py-3.5 px-8 bg-[#4CAF4F] hover:bg-[#F5F7FA] text-white hover:text-[#4CAF4F] font-medium">
-                        Register
-                    </button>
-                </div>
-        
-                <!-- Image Section -->
-                <div class="w-full md:w-1/2 lg:w-1/3 flex justify-center">
-                    <img src="images/Illustration.png" alt="Illustration image" class="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 h-auto object-cover">
-                </div>
-            </div>
-        </div>  
-        <!-- Dot Image -->
-        <div class="flex justify-center mt-[-50px]">
-            <img src="images/Dot.png" alt="dot image" class="w-12 md:w-12">
-        </div>
-        
+
         <script>
             // Hamburger Menu Toggle
             document.getElementById("hamburger").addEventListener("click", function () {
@@ -85,7 +59,37 @@
                 mobileMenu.classList.toggle("hidden");
             });
         </script>
-        
+   
+    <!--HOME-->
+    <!-- Main Content -->
+    <div class="w-full h-auto py-20 bg-[#F5F7FA]">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center ">
+            <!-- Text Section -->
+            <div class="w-full md:w-1/2 mt-8 md:mt-0">
+                <h1 class="font-inter text-4xl md:text-6xl leading-tight text-[#4D4D4D]">
+                    Lessons and insights <br>
+                    <span class="text-[#4CAF4F]">from 8 years</span>
+                </h1>
+                <p class="mt-4 text-[#717171] text-base md:text-lg">
+                    Where to grow your business as a photographer: site or social media?
+                </p>
+                <button class="mt-6 w-full md:w-[128px] h-[52px] rounded py-3.5 px-8 bg-[#4CAF4F] hover:bg-[#F5F7FA] text-white hover:text-[#4CAF4F] font-medium">
+                    Register
+                </button>
+            </div>
+    
+            <!-- Image Section -->
+            <div class="w-full sm:w-1/4 md:w-1/4 lg:w-1/2 flex justify-center">
+                <img src="images/Illustration.png" alt="Illustration image" class=" w-64 md:w-48 lg:w-64 h-auto object-cover">
+            </div>
+        </div>
+    </div>    
+    <!-- Dot Image -->
+    <div class="flex justify-center">
+        <img src="images/Dot.png" alt="dot image" class="w-12 md:w-12">
+    </div>
+
+        <!--OUR CLIENTS-->
         <div class="w-full h-auto py-8 px-4 sm:px-6 md:px-24 lg:px-36 bg-[#FFFFFF]">
             <!-- Section Header: Our Clients -->
             <div class="w-full max-w-7xl mx-auto text-center">
@@ -155,206 +159,216 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div>
-            <!-- Main Container -->
-            <div class="w-full">
-                <!-- First Section -->
-                <div class="flex flex-col lg:flex-row w-full h-auto lg:h-[433px] justify-between py-8 lg:py-0 px-8 lg:px-36">
-                    <div class="w-full lg:w-[442px] h-auto lg:h-[433px] mb-8 lg:mb-0">
-                        <img class="w-full" src="images/rafiki.png" alt="this is rafiki">
-                    </div>
-                    <div class="w-full lg:w-[661px] h-auto lg:h-[266px] flex flex-col gap-8">
-                        <div class="w-full lg:w-[601px] h-auto lg:h-[184px] gap-4 pt-0 lg:pt-[35px]">
-                            <h2 class="text-xl lg:text-[36px] font-semibold leading-6 lg:leading-[44px] text-[#4D4D4D]">
-                                The unseen of spending three <br> years at Pixelgrade
-                            </h2>
-                            <p class="text-sm lg:text-[14px] leading-5 text-[#717171] pt-4">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
-                            </p>
-                        </div>
-                        <button class="w-full lg:w-[151px] h-[52px] rounded py-3.5 px-8 bg-[#4CAF4F] hover:bg-[#FFFFFF] font-medium text-sm text-white hover:text-[#4CAF4F] mt-6 lg:mt-[70px]">
-                            Learn More
-                        </button>
-                    </div>
-                </div>
-        
-                <!-- Stats Section -->
-                <div class="w-full h-auto flex flex-col lg:flex-row justify-center items-center py-16 lg:px-36 bg-[#F5F7FA]">
-                    <div class="w-full lg:w-[540px] text-center lg:text-left mb-8 lg:mb-0">
-                        <h2 class="text-xl lg:text-[36px] font-semibold text-[#4D4D4D] leading-6 lg:leading-[44px]">
-                            Helping a local <br>
-                            <span class="text-[#4CAF4F]">business reinvent itself</span>
-                        </h2>
-                        <p class="text-sm lg:text-base text-[#18191F] mt-4">We reached here with our hard work and dedication</p>
-                    </div>
-                    <div class="flex flex-wrap justify-between gap-8 lg:gap-[30px] pb-[30px]">
-                        <div class="flex items-center gap-4">
-                            <img class="w-[48px] h-[48px]" src="images/Icon.png" alt="icon 1">
-                            <div>
-                                <h3 class="text-[28px] font-bold text-[#4D4D4D]">2,245,341</h3>
-                                <p class="text-[16px] text-[#18191F]">Members</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <img class="w-[48px] h-[48px]" src="images/Icon (2).png" alt="icon 2">
-                            <div>
-                                <h3 class="text-[28px] font-bold text-[#4D4D4D]">46,328</h3>
-                                <p class="text-[16px] text-[#18191F]">Clubs</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <img class="w-[48px] h-[48px]" src="images/Icon (1).png" alt="icon 3">
-                            <div>
-                                <h3 class="text-[28px] font-bold text-[#4D4D4D]">828,867</h3>
-                                <p class="text-[16px] text-[#18191F]">Events Booking</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <img class="w-[48px] h-[48px]" src="images/Icon (3).png" alt="icon 4">
-                            <div>
-                                <h3 class="text-[28px] font-bold text-[#4D4D4D]">1,926,436</h3>
-                                <p class="text-[16px] text-[#18191F]">Payments</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Footer Section 1 -->
-                <div class="flex flex-col lg:flex-row justify-evenly items-center mt-[30px]">
-                    <img class="w-full lg:w-auto" src="images/pana.png" alt="this is image pana">
-                    <div class="text-center lg:text-left">
-                        <h2 class="text-xl lg:text-[36px] font-semibold leading-6 lg:leading-[44px] text-[#4D4D4D]">
-                            How to design your site footer like <br> we did
-                        </h2>
-                        <p class="text-sm lg:text-[14px] text-[#717171] pt-4">
-                            Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor...
-                        </p>
-                        <button class="w-full lg:w-[151px] h-[52px] rounded py-3.5 px-8 bg-[#4CAF4F] hover:bg-[#FFFFFF] font-medium text-sm text-white hover:text-[#4CAF4F] mt-6 lg:mt-[70px]">
-                            Learn More
-                        </button>
-                    </div>
-                </div>
-        
-                <!-- Footer Section 2 -->
-                <div class="flex flex-col lg:flex-row justify-evenly items-center bg-[#F5F7FA] mt-[60px]">
-                    <img class="w-full lg:w-auto" src="images/image 9.png" alt="image 9">
-                    <div class="text-center lg:text-left">
-                        <p class="text-sm lg:text-base text-[#717171]">
-                            Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui...
-                        </p>
-                        <h4 class="text-xl font-semibold text-[#4CAF4F] mt-2">Tim Smith</h4>
-                        <p class="text-sm text-[#89939e]">British Dragon Boat Racing Association</p>
-                    </div>
-                </div>
-        
-                <!-- Blog Section -->
-                <div class="text-center mt-[50px] mb-[30px]">
-                    <h2 class="text-xl lg:text-[36px] font-semibold text-[#4D4D4D]">Caring is the new marketing</h2>
-                    <p class="text-sm lg:text-base text-[#717171] mt-4">
-                        The Nexcent blog is the best place to read about the latest membership insights...
+        </div>  
+    <!--BODY-->      
+    <!-- Main Container -->
+    <div class="w-full">
+        <!-- First Section -->
+        <div class="flex flex-col lg:flex-row w-full h-auto lg:h-[433px] justify-between py-8 lg:py-0 px-8 lg:px-36">
+            <div class="w-full lg:w-[442px] h-auto lg:h-[433px] mb-8 lg:mb-0">
+                <img class="w-full h-auto" src="images/rafiki.png" alt="this is rafiki">
+            </div>
+            <div class="w-full lg:w-[661px] h-auto lg:h-[266px] flex flex-col gap-8">
+                <div class="w-full lg:w-[601px] h-auto lg:h-[184px] gap-4 pt-0 lg:pt-[35px]">
+                    <h2 class="text-xl lg:text-[36px] font-semibold leading-6 lg:leading-[44px] text-[#4D4D4D]">
+                        The unseen of spending three <br> years at Pixelgrade
+                    </h2>
+                    <p class="text-sm lg:text-[14px] leading-5 text-[#717171] pt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
                     </p>
                 </div>
-        
-                <!-- Cards Section -->
-                <div class="flex flex-wrap justify-evenly items-center mt-[30px] mb-[110px]">
-                    <div class="relative w-[368px] h-[286px] mb-8 lg:mb-0">
-                        <img class="w-full h-full" src="images/image 18.png" alt="image 18">
-                        <div class="absolute bottom-0 w-full h-[176px] rounded-lg bg-[#F5F7FA] shadow-lg flex flex-col justify-center items-center">
-                            <h4 class="font-semibold text-[#717171] text-xl">Creating Streamlined Safeguarding Processes</h4>
-                            <div class="flex items-center gap-2 mt-4">
-                                <h4 class="text-xl font-semibold text-[#4CAF4F]">Read More</h4>
-                                <img src="images/Right.png" alt="right arrow">
-                            </div>
-                        </div>
+                <button class="w-full lg:w-[151px] h-[52px] rounded py-3.5 px-8 bg-[#4CAF4F] hover:bg-[#FFFFFF] font-medium text-sm text-white hover:text-[#4CAF4F] mt-6 lg:mt-[70px]">
+                    Learn More
+                </button>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="w-full h-auto flex flex-col lg:flex-row justify-center items-center py-16 lg:px-36 bg-[#F5F7FA]">
+            <div class="w-full lg:w-[540px] text-center lg:text-left mb-8 lg:mb-0">
+                <h2 class="text-xl lg:text-[36px] font-semibold text-[#4D4D4D] leading-6 lg:leading-[44px]">
+                    Helping a local <br>
+                    <span class="text-[#4CAF4F]">business reinvent itself</span>
+                </h2>
+                <p class="text-sm lg:text-base text-[#18191F] mt-4">We reached here with our hard work and dedication</p>
+            </div>
+            <div class="flex flex-wrap justify-between gap-8 lg:gap-[30px] pb-[30px]">
+                <div class="flex items-center gap-4">
+                    <img class="w-[48px] h-[48px]" src="images/Icon.png" alt="icon 1">
+                    <div>
+                        <h3 class="text-[28px] font-bold text-[#4D4D4D]">2,245,341</h3>
+                        <p class="text-[16px] text-[#18191F]">Members</p>
                     </div>
-                    <div class="relative w-[368px] h-[286px] mb-8 lg:mb-0">
-                        <img class="w-full h-full" src="images/image 19.png" alt="image 19">
-                        <div class="absolute bottom-0 w-full h-[176px] rounded-lg bg-[#F5F7FA] shadow-lg flex flex-col justify-center items-center">
-                            <h4 class="font-semibold text-[#717171] text-xl">What are your safeguarding responsibilities?</h4>
-                            <div class="flex items-center gap-2 mt-4">
-                                <h4 class="text-xl font-semibold text-[#4CAF4F]">Read More</h4>
-                                <img src="images/Right.png" alt="right arrow">
-                            </div>
-                        </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img class="w-[48px] h-[48px]" src="images/Icon (2).png" alt="icon 2">
+                    <div>
+                        <h3 class="text-[28px] font-bold text-[#4D4D4D]">46,328</h3>
+                        <p class="text-[16px] text-[#18191F]">Clubs</p>
                     </div>
-                    <div class="relative w-[368px] h-[286px]">
-                        <img class="w-full h-full" src="images/image 20.png" alt="image 20">
-                        <div class="absolute bottom-0 w-full h-[176px] rounded-lg bg-[#F5F7FA] shadow-lg flex flex-col justify-center items-center">
-                            <h4 class="font-semibold text-[#717171] text-xl">Revamping the Membership Model</h4>
-                            <div class="flex items-center gap-2 mt-4">
-                                <h4 class="text-xl font-semibold text-[#4CAF4F]">Read More</h4>
-                                <img src="images/Right.png" alt="right arrow">
-                            </div>
-                        </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img class="w-[48px] h-[48px]" src="images/Icon (1).png" alt="icon 3">
+                    <div>
+                        <h3 class="text-[28px] font-bold text-[#4D4D4D]">828,867</h3>
+                        <p class="text-[16px] text-[#18191F]">Events Booking</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img class="w-[48px] h-[48px]" src="images/Icon (3).png" alt="icon 4">
+                    <div>
+                        <h3 class="text-[28px] font-bold text-[#4D4D4D]">1,926,436</h3>
+                        <p class="text-[16px] text-[#18191F]">Payments</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="w-full mt-[50px]">
-            <!-- Top Section -->
-            <div class="w-full h-auto bg-[#F5F7FA] px-4 py-8">
-                <h1 class="text-center font-inter font-semibold text-[32px] leading-[40px] lg:text-[64px] lg:leading-[76px] text-[#263238]">
-                    Pellentesque suscipit <br class="hidden lg:block"> fringilla libero eu.
-                </h1>
-                <div class="flex justify-center items-center mt-6">
-                    <button class="flex rounded py-3.5 px-8 gap-2.5 bg-[#4CAF4F] font-inter font-medium text-sm text-center text-[#FFFFFF] mt-6">
-                        Get a Demo <img class="mt-[2px]" src="images/Down.png" alt="">
-                    </button>
-                </div>
+
+        <!-- Footer Section 1 -->
+        <div class="flex flex-col lg:flex-row w-full h-auto lg:h-[433px] justify-between py-8 lg:py-0 px-8 lg:px-36 mt-[30px]">
+            <div class="w-full lg:w-[442px] h-auto lg:h-[433px] mb-8 lg:mb-0">
+                <img class="w-full w-78 md:w-48 lg:w-64 h-auto mt-[30px]" src="images/pana.png" alt="this is pana">
             </div>
-        
-            <!-- Bottom Section -->
-            <div class="w-full h-auto bg-[#263838] flex flex-col lg:flex-row justify-center items-center lg:justify-between px-4 py-12 lg:px-36 lg:py-16">
-                <!-- Left Section -->
-                <div class="flex flex-col items-center lg:items-start mb-8 lg:mb-0">
-                    <img class="w-[191px] h-[29.67px]" src="images/Logo.png" alt="logo image">
-                    <p class="font-inter font-normal text-sm text-center lg:text-left text-[#F5F7FA] mt-4">
-                        Copyright © 2020 Nexcent ltd. <br>All rights reserved
+            <div class="w-full lg:w-[661px] h-auto lg:h-[266px] flex flex-col gap-8">
+                <div class="w-full lg:w-[601px] h-auto lg:h-[184px] gap-4 pt-0 lg:pt-[35px]">
+                    <h2 class="text-xl lg:text-[36px] font-semibold leading-6 lg:leading-[44px] text-[#4D4D4D]">
+                        How to design your site footer like <br> we did
+                    </h2>
+                    <p class="text-sm lg:text-[14px] leading-5 text-[#717171] pt-4">
+                        Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.
                     </p>
-                    <img class="w-[176px] h-[32px] mt-4" src="images/Social Links.png" alt="social links image">
                 </div>
+                <button class="w-full lg:w-[151px] h-[52px] rounded py-3.5 px-8 bg-[#4CAF4F] hover:bg-[#FFFFFF] font-medium text-sm text-white hover:text-[#4CAF4F] mt-6 lg:mt-[70px]">
+                    Learn More
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer Section 2 -->
+        <div class="flex flex-col lg:flex-row justify-evenly items-center bg-[#F5F7FA] mt-[60px] p-4">
+            <img class="w-full max-w-xs md:max-w-sm lg:max-w-xs h-auto mb-4 lg:mb-0" src="images/image 9.png" alt="image 9">
+            
+            <div class="text-center lg:text-left lg:ml-6">
+                <p class="text-sm lg:text-base text-[#717171] mb-4">
+                    Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+                </p>
+                <h4 class="text-xl font-semibold text-[#4CAF4F] mt-2">Tim Smith</h4>
+                <p class="text-sm text-[#89939e]">British Dragon Boat Racing Association</p>
         
-                <!-- Right Section (Navigation and Stay Up to Date) -->
-                <div class="w-full lg:w-auto flex flex-col lg:flex-row justify-evenly lg:justify-between items-center lg:items-start gap-8 lg:gap-12">
-                    <!-- Company Section -->
-                    <section class="flex flex-col text-center lg:text-left">
-                        <h4 class="font-inter font-semibold text-xl text-[#FFFFFF] mb-4">Company</h4>
-                        <ul class="space-y-2">
-                            <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">About us</a></li>
-                            <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Blog</a></li>
-                            <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Contact us</a></li>
-                            <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Pricing</a></li>
-                            <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Testimonials</a></li>
-                        </ul>
-                    </section>
-        
-                    <!-- Support Section -->
-                    <section class="flex flex-col text-center lg:text-left">
-                        <h4 class="font-inter font-semibold text-xl text-[#FFFFFF] mb-4">Support</h4>
-                        <ul class="space-y-2">
-                            <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Help center</a></li>
-                            <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Terms of service</a></li>
-                            <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Legal</a></li>
-                            <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Privacy policy</a></li>
-                            <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Status</a></li>
-                        </ul>
-                    </section>
-        
-                    <!-- Stay up to date Section -->
-                    <section class="flex flex-col text-center lg:text-left">
-                        <h4 class="font-inter font-semibold text-xl text-[#FFFFFF] mb-4">Stay up to date</h4>
-                        <div class="flex justify-between items-center bg-white/20 p-3 rounded w-full lg:w-[255px]">
-                            <p class="font-inter font-normal text-sm text-[#D9DBE1]">Your email address</p>
-                            <img src="images/Vector.png" alt="vector image">
-                        </div>
-                    </section>
+                <div class="flex flex-col sm:flex-row items-center mt-4 space-y-4 sm:space-y-0 sm:space-x-4">
+                    <img class="w-full h-auto" src="images/Frame 10.png" alt="frame 10">
+                    <div class="flex justify-center items-center">
+                        <h4 class="text-xl font-semibold text-[#4CAF4F] mr-2">Meet all Customers</h4>
+                        <img class="w-6 h-auto" src="images/Right.png" alt="right arrow">
+                    </div>
                 </div>
             </div>
         </div>
         
+
+        <!-- Blog Section -->
+        <div class="text-center mt-[50px] mb-[30px]">
+            <h2 class="text-xl lg:text-[36px] font-semibold text-[#4D4D4D]">Caring is the new marketing</h2>
+            <p class="text-sm lg:text-base text-[#717171] mt-4">
+                The Nexcent blog is the best place to read about the latest membership insights...
+            </p>
+        </div>
+
+        <!-- Cards Section -->
+        <div class="flex flex-wrap justify-evenly items-center mt-[30px] mb-[110px]">
+            <div class="relative w-[368px] h-[286px] mb-8 lg:mb-0">
+                <img class="w-full h-full" src="images/image 18.png" alt="image 18">
+                <div class="absolute bottom-0 w-full h-[176px] rounded-lg bg-[#F5F7FA] shadow-lg flex flex-col justify-center items-center">
+                    <h4 class="font-semibold text-[#717171] text-xl">Creating Streamlined Safeguarding Processes</h4>
+                    <div class="flex items-center gap-2 mt-4">
+                        <h4 class="text-xl font-semibold text-[#4CAF4F]">Read More</h4>
+                        <img src="images/Right.png" alt="right arrow">
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-[368px] h-[286px] mb-8 lg:mb-0">
+                <img class="w-full h-full" src="images/image 19.png" alt="image 19">
+                <div class="absolute bottom-0 w-full h-[176px] rounded-lg bg-[#F5F7FA] shadow-lg flex flex-col justify-center items-center">
+                    <h4 class="font-semibold text-[#717171] text-xl">What are your safeguarding responsibilities?</h4>
+                    <div class="flex items-center gap-2 mt-4">
+                        <h4 class="text-xl font-semibold text-[#4CAF4F]">Read More</h4>
+                        <img src="images/Right.png" alt="right arrow">
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-[368px] h-[286px]">
+                <img class="w-full h-full" src="images/image 20.png" alt="image 20">
+                <div class="absolute bottom-0 w-full h-[176px] rounded-lg bg-[#F5F7FA] shadow-lg flex flex-col justify-center items-center">
+                    <h4 class="font-semibold text-[#717171] text-xl">Revamping the Membership Model</h4>
+                    <div class="flex items-center gap-2 mt-4">
+                        <h4 class="text-xl font-semibold text-[#4CAF4F]">Read More</h4>
+                        <img src="images/Right.png" alt="right arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <div class="w-full mt-[50px]">
+        <!-- Top Section -->
+        <div class="w-full h-auto bg-[#F5F7FA] px-4 py-8">
+            <h1 class="text-center font-inter font-semibold text-[32px] leading-[40px] lg:text-[64px] lg:leading-[76px] text-[#263238]">
+                Pellentesque suscipit <br class="hidden lg:block"> fringilla libero eu.
+            </h1>
+            <div class="flex justify-center items-center mt-6">
+                <button class="flex rounded py-3.5 px-8 gap-2.5 bg-[#4CAF4F] font-inter font-medium text-sm text-center text-[#FFFFFF] mt-6">
+                    Get a Demo <img class="mt-[2px]" src="images/Down.png" alt="">
+                </button>
+            </div>
+        </div>
+    
+        <!-- Bottom Section -->
+        <div class="w-full h-auto bg-[#263838] flex flex-col lg:flex-row justify-center items-center lg:justify-between px-4 py-12 lg:px-36 lg:py-16">
+            <!-- Left Section -->
+            <div class="flex flex-col items-center lg:items-start mb-8 lg:mb-0">
+                <img class="w-[191px] h-[29.67px]" src="images/Logo.png" alt="logo image">
+                <p class="font-inter font-normal text-sm text-center lg:text-left text-[#F5F7FA] mt-4">
+                    Copyright © 2020 Nexcent ltd. <br>All rights reserved
+                </p>
+                <img class="w-[176px] h-[32px] mt-4" src="images/Social Links.png" alt="social links image">
+            </div>
+    
+            <!-- Right Section (Navigation and Stay Up to Date) -->
+            <div class="w-full lg:w-auto flex flex-col lg:flex-row justify-evenly lg:justify-between items-center lg:items-start gap-8 lg:gap-12">
+                <!-- Company Section -->
+                <section class="flex flex-col text-center lg:text-left">
+                    <h4 class="font-inter font-semibold text-xl text-[#FFFFFF] mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">About us</a></li>
+                        <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Blog</a></li>
+                        <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Contact us</a></li>
+                        <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Pricing</a></li>
+                        <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Testimonials</a></li>
+                    </ul>
+                </section>
+    
+                <!-- Support Section -->
+                <section class="flex flex-col text-center lg:text-left">
+                    <h4 class="font-inter font-semibold text-xl text-[#FFFFFF] mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Help center</a></li>
+                        <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Terms of service</a></li>
+                        <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Legal</a></li>
+                        <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Privacy policy</a></li>
+                        <li><a class="font-inter font-normal text-sm text-[#F5F7FA]" href="#">Status</a></li>
+                    </ul>
+                </section>
+    
+                <!-- Stay up to date Section -->
+                <section class="flex flex-col text-center lg:text-left">
+                    <h4 class="font-inter font-semibold text-xl text-[#FFFFFF] mb-4">Stay up to date</h4>
+                    <div class="flex justify-between items-center bg-white/20 p-3 rounded w-full lg:w-[255px]">
+                        <p class="font-inter font-normal text-sm text-[#D9DBE1]">Your email address</p>
+                        <img src="images/Vector.png" alt="vector image">
+                    </div>
+                </section>
+            </div>
+        </div>
     </div>
 </body>
 </html>
